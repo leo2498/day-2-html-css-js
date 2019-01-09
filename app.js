@@ -45,7 +45,7 @@
   }
 
   var dog = prompt('Do I own a dog? Please answer with Y or N.').toLowerCase();
-  console.log('Do I have a dog?', brokenBone);
+  console.log('Do I have a dog?', dog);
 
   if (dog === 'y' || dog === 'yes') {
     alert('You are correct! I\'ve recently adopted a pet doggo');
