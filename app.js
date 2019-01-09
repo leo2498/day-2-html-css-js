@@ -1,5 +1,6 @@
 'use strict';
 
+//Question 1
   var allergies = prompt('Do I have any allergies? Please answer with Y or N').toLowerCase();
   console.log('Do I have any allergies? ', allergies);
 
@@ -11,6 +12,7 @@
     alert('Please answer with Y or N');
   }
 
+  //Question 2
   var brokenBone = prompt('Have I ever broken any bones? Please answer with Y or N.').toLowerCase();
   console.log('Have I broken a bone?', brokenBone);
 
@@ -22,6 +24,7 @@
     alert('Please answer with Y or N');
   }
 
+  //Question 3
   var sisters = prompt('Do I have any sisters? Please answer with Y or N.').toLowerCase();
   console.log('Do I have sisters?', sisters);
 
@@ -33,6 +36,7 @@
     alert('Please answer with Y or N');
   }
 
+  //Question 4
   var brothers = prompt('Do I have any brothers? Please answer with Y or N.').toLowerCase();
   console.log('Do I have any brothers?', brothers);
 
@@ -44,6 +48,8 @@
     alert('Please answer with Y or N');
   }
 
+
+//Question 5  
   var dog = prompt('Do I own a dog? Please answer with Y or N.').toLowerCase();
   console.log('Do I have a dog?', dog);
 
