@@ -33,4 +33,24 @@
     alert('Please answer with Y or N');
   }
 
-  
+  var brothers = prompt('Do I have any brothers? Please answer with Y or N.').toLowerCase();
+  console.log('Do I have any brothers?', brothers);
+
+  if (brothers === 'y' || brothers === 'yes') {
+    alert('Correct! I have 2 older brothers');
+  } else if (brothers === 'n' || brothers === 'no') {
+    alert('Wrong, I\'m the youngest of my 2 brothers.');
+  } else {
+    alert('Please answer with Y or N');
+  }
+
+  var dog = prompt('Do I own a dog? Please answer with Y or N.').toLowerCase();
+  console.log('Do I have a dog?', brokenBone);
+
+  if (dog === 'y' || dog === 'yes') {
+    alert('You are correct! I\'ve recently adopted a pet doggo');
+  } else if (dog === 'n' || dog === 'no') {
+    alert('Woops you\'re incorrect.');
+  } else {
+    alert('Please answer with Y or N');
+  }
