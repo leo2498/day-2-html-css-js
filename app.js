@@ -1,7 +1,7 @@
 // 'use strict';
 
-// var answersCorrect = 0;
-// console.log(answersCorrect);
+ var answersCorrect = 0;
+ console.log(answersCorrect);
 
 // //Question 1
 //   var allergies = prompt('Do I have any allergies? Please answer with Y or N').toLowerCase();
@@ -70,34 +70,66 @@
 //   }
 
 
-  var guessesRemaining = 4
-  var howManyCars = 5
+  // var guessesRemaining = 4
+  // var howManyCars = 5
 
-  while (guessesRemaining > 0) {
-    var howMany = prompt('Can you guess how many cars i\'ve owned so far?');
-    howManyCars = parseInt(howManyCars);
-    console.log('How many cars have i owned? ', howMany);
-    guessesRemaining--;
+  // while (guessesRemaining > 0) {
+  //   var howMany = prompt('Can you guess how many cars i\'ve owned so far?');
+  //   howMany = parseInt(howMany);
+  //   console.log('How many cars have i owned? ', howMany);
+  //   // guessesRemaining--;
 
-    if (howManyCars === howMany) {
-      alert('You are right!');
-      console.log('Guessed correctly.');
-      answersCorrect++;
-      break;
-    } else if (howManyCars < howMany) {
-      alert('Give it another try, higher this time.');
-      console.log('Incorrect, try a higher number', howMany);
-      guessesRemaining--;
-    } else if (howManyCars > howMany) {
-      alert('Wrong please try again with a lower number.');
-      console.log('Incorrect, try a lower number.', howMany);
-      guessesRemaining--;
+  //   if (howManyCars === howMany) {
+  //     alert('You are right!');
+  //     console.log('Guessed correctly.');
+  //     answersCorrect++;
+  //     break;
+  //  } else if (howManyCars > howMany) {
+  //     alert('Give it another try, higher this time.');
+  //     console.log('Incorrect, try a higher number', howMany);
+  //     guessesRemaining--;
+  //   } else if (howManyCars < howMany) {
+  //     alert('Wrong please try again with a lower number.');
+  //     console.log('Incorrect, try a lower number.', howMany);
+  //     guessesRemaining--;
+  //   }
+  // }
+  // if (guessesRemaining === 0) {
+  //   alert('You\'re out of guesses!')
+  //   console.log('You\'re out of guesses');
+  // }
+
+
+    var favoriteCarModels = ['camaro', 'corvette', 'audi rs7', 'challenger'];
+    var secondGuessRemaining = 5;
+    console.log(secondGuessRemaining);
+
+    while (secondGuessRemaining > 0) {
+      var myCars = prompt('Can you guess one of my favorite Cars?').toLowerCase();
+      console.log();
+      secondGuessRemaining--;
+      
+      for (var i = 0;  i < favoriteCarModels.length; i++) {
+        if (myCars === favoriteCarModels[i] ) {
+          alert('Nice! you got it correct');
+          secondGuessRemaining = -1;
+          answersCorrect++;
+          break;
+        }
+      }
+      if(secondGuessRemaining > 0) {
+        alert('Wrong, please try again.');
+      }
     }
-  }
-  if (guessesRemaining === 0) {
-    alert('You\'re out of guesses!')
-    console.log('You\'re out of guesses');
-  }
+  
+    if(answersCorrect ===0){
+      alert('Sorry, you failed to guess my answers.');
+    }else if(answersCorrect > 3 &&  answersCorrect < 5) {
+      alert('Congradulations! ' + answersCorrect + 'out of 5 correct hopefully when my insurance goes down and i could afford a Camaro I\'ll take you to the track with me!');
+    }
+
+  
+  
 
 
 
