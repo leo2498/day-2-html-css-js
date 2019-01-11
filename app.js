@@ -67,10 +67,11 @@ function questionFour() {
 }
 questionFour();
 
- //Question 5  
-   var dog = prompt('Do I own a dog? Please answer with Y or N.').toLowerCase();
-   console.log('Do I have a dog?', dog);
 
+//Question 5  
+var dog = prompt('Do I own a dog? Please answer with Y or N.').toLowerCase();
+console.log('Do I have a dog?', dog);
+function questionFive() {
    if (dog === 'y' || dog === 'yes') {
      alert('You are correct! I\'ve recently adopted a pet doggo');
      answersCorrect++;
@@ -79,10 +80,12 @@ questionFour();
    } else {
      alert('Please answer with Y or N');
    }
+}
+questionFive();
 
-
-   var guessesRemaining = 4
-   var howManyCars = 5
+function questionSix() {
+var guessesRemaining = 4
+var howManyCars = 5
 
    while (guessesRemaining > 0) {
      var howMany = prompt('Can you guess how many cars i\'ve owned so far?');
@@ -109,8 +112,10 @@ questionFour();
      alert('You\'re out of guesses!')
      console.log('You\'re out of guesses');
    }
+}
+questionSix();
 
-
+function questionSeven() {
     var favoriteCarModels = ['camaro', 'corvette', 'audi rs7', 'challenger'];
     var secondGuessRemaining = 5;
     console.log(secondGuessRemaining);
@@ -125,6 +130,7 @@ questionFour();
           alert('Nice! you got it correct');
           secondGuessRemaining = -1;
           answersCorrect++;
+          console.log('answersCorrect is currently:', answersCorrect);
           break;
         }
       }
@@ -135,6 +141,8 @@ questionFour();
   
     if(answersCorrect ===0){
       alert('Sorry, you failed to guess my answers.');
-    }else if(answersCorrect > 3 &&  answersCorrect < 5) {
-      alert('Congradulations! ' + answersCorrect + 'out of 5 correct hopefully when my insurance goes down and i could afford a Camaro I\'ll take you to the track with me!');
+    }else if(answersCorrect > 3 &&  answersCorrect < 8) {
+      alert('Congradulations! ' + answersCorrect + 'out of 7 correct hopefully when my insurance goes down and i could afford a Camaro I\'ll take you to the track with me!');
     }
+  }
+  questionSeven();  
