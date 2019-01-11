@@ -1,7 +1,8 @@
  'use strict';
 
- var answersCorrect = 0;
- console.log(answersCorrect);
+var answersCorrect = 0;
+console.log(answersCorrect);
+function questionOne() {
 
  //Question 1
    var allergies = prompt('Do I have any allergies? Please answer with Y or N').toLowerCase();
@@ -15,11 +16,14 @@
    } else { 
      alert('Please answer with Y or N');
    }
+}
+questionOne();
+
 
   //Question 2
-   var brokenBone = prompt('Have I ever broken any bones? Please answer with Y or N.').toLowerCase();
-   console.log('Have I broken a bone?', brokenBone);
-
+var brokenBone = prompt('Have I ever broken any bones? Please answer with Y or N.').toLowerCase();
+console.log('Have I broken a bone?', brokenBone);
+function questionTwo() {
    if (brokenBone === 'y' || brokenBone === 'yes') {
      alert('You are correct! I\'ve broken multiple bones.');
      answersCorrect++;
@@ -28,11 +32,14 @@
    } else {
      alert('Please answer with Y or N');
    }
+}
+questionTwo();
 
-   //Question 3
-    var sisters = prompt('Do I have any sisters? Please answer with Y or N.').toLowerCase();
-    console.log('Do I have sisters?', sisters);
 
+  //Question 3
+var sisters = prompt('Do I have any sisters? Please answer with Y or N.').toLowerCase();
+console.log('Do I have sisters?', sisters);
+function questionThree() {
    if (sisters === 'y' || sisters === 'yes') {
      alert('You are correct! I have 1 older sister.');
      answersCorrect++;
@@ -41,11 +48,14 @@
    } else {
      alert('Please answer with Y or N');
    }
+}
+questionThree();
 
-   //Question 4
-   var brothers = prompt('Do I have any brothers? Please answer with Y or N.').toLowerCase();
-   console.log('Do I have any brothers?', brothers);
 
+//Question 4
+var brothers = prompt('Do I have any brothers? Please answer with Y or N.').toLowerCase();
+console.log('Do I have any brothers?', brothers);
+function questionFour() {
    if (brothers === 'y' || brothers === 'yes') {
      alert('Correct! I have 2 older brothers');
      answersCorrect++;
@@ -54,12 +64,14 @@
    } else {
      alert('Please answer with Y or N');
    }
+}
+questionFour();
 
 
- //Question 5  
-   var dog = prompt('Do I own a dog? Please answer with Y or N.').toLowerCase();
-   console.log('Do I have a dog?', dog);
-
+//Question 5  
+var dog = prompt('Do I own a dog? Please answer with Y or N.').toLowerCase();
+console.log('Do I have a dog?', dog);
+function questionFive() {
    if (dog === 'y' || dog === 'yes') {
      alert('You are correct! I\'ve recently adopted a pet doggo');
      answersCorrect++;
@@ -68,10 +80,12 @@
    } else {
      alert('Please answer with Y or N');
    }
+}
+questionFive();
 
-
-   var guessesRemaining = 4
-   var howManyCars = 5
+function questionSix() {
+var guessesRemaining = 4
+var howManyCars = 5
 
    while (guessesRemaining > 0) {
      var howMany = prompt('Can you guess how many cars i\'ve owned so far?');
@@ -98,8 +112,10 @@
      alert('You\'re out of guesses!')
      console.log('You\'re out of guesses');
    }
+}
+questionSix();
 
-
+function questionSeven() {
     var favoriteCarModels = ['camaro', 'corvette', 'audi rs7', 'challenger'];
     var secondGuessRemaining = 5;
     console.log(secondGuessRemaining);
@@ -114,6 +130,7 @@
           alert('Nice! you got it correct');
           secondGuessRemaining = -1;
           answersCorrect++;
+          console.log('answersCorrect is currently:', answersCorrect);
           break;
         }
       }
@@ -124,14 +141,8 @@
   
     if(answersCorrect ===0){
       alert('Sorry, you failed to guess my answers.');
-    }else if(answersCorrect > 3 &&  answersCorrect < 5) {
-      alert('Congradulations! ' + answersCorrect + 'out of 5 correct hopefully when my insurance goes down and i could afford a Camaro I\'ll take you to the track with me!');
+    }else if(answersCorrect > 3 &&  answersCorrect < 8) {
+      alert('Congradulations! ' + answersCorrect + 'out of 7 correct hopefully when my insurance goes down and i could afford a Camaro I\'ll take you to the track with me!');
     }
-
-  
-  
-
-
-
-  
-
+  }
+  questionSeven();  
